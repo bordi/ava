@@ -7,7 +7,6 @@ $(function() {
 
     //click on navigation items
     $('#js-mainNavigation').on('click', '.nav__item:not(.nav__item--button)', handleClickToScroll);
-    $('#js-ScrollToContacts').on('click', handleClickToScroll);
 });
 
 function handleClickToScroll(e) {
@@ -21,15 +20,15 @@ function handleClickToScroll(e) {
     $('html,body').animate({scrollTop: docFragmentOffset}, 1000);
 }
 
-function handleSliderChange(position,value) {
+function handleSliderChange(position, value) {
     var multipleFactor = 23;
-    var resSum = value*multipleFactor;
+    var resSum = value * multipleFactor;
 
     $('.rangeslider__handle').attr('data-value', value);
     $('#js-calcSum').text(resSum);
 }
 
-$(window).load(function() {
+$(window).on('load', function() {
     $('input[type="range"]').rangeslider({
         polyfill: false,
         onInit: function() {
@@ -39,4 +38,17 @@ $(window).load(function() {
     });
 
     $('#page').indyFadeBox();
+
+    loadImage();
 });
+
+function loadImage() {
+    var img = new Image();
+
+    img.src = "./img/bg-heropage.jpg";
+
+    img.onload = function() {
+        $('#page-hero').addClass('page-hero--loaded');
+        //$('#page-hero').css('background-image', 'url('+img.src+')');
+    };
+}
