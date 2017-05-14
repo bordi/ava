@@ -58,7 +58,7 @@
 
                 link.type = 'text/css';
                 link.rel = 'stylesheet';
-                link.href = '/assets/custom-fonts.css';
+                link.href = './assets/custom-fonts.css';
 
                 document.head.appendChild(link);
                 document.documentElement.classList.add('wf-active');
@@ -71,7 +71,7 @@
                 }
 
                 var request = new XMLHttpRequest();
-                request.open('GET', '/assets/custom-fonts.css', true);
+                request.open('GET', './assets/custom-fonts.css', true);
 
                 request.onload = function() {
                     if(request.status >= 200 && request.status < 400) {
