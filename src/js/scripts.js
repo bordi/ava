@@ -37,4 +37,8 @@ $(window).load(function() {
         },
         onSlide: handleSliderChange,
     });
+
+
+    $('#page').indyFadeBox();
+
 });
