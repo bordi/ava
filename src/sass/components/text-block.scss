@@ -1,0 +1,29 @@
+@import "../variables";
+@import "../mixins";
+
+.text-block {
+    max-width: $content-width;
+    padding: 0 $grid-gutter-width/2;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    .page-block__title {
+        line-height: 1.25;
+
+        @include tabletUp() {
+            line-height: 1.66;
+        }
+    }
+
+    .button {
+        margin-top: 40px;
+        width: 300px;
+        font-size: 20px;
+
+        @include tabletUp() {
+            margin-top: 95px;
+        }
+    }
+
+}

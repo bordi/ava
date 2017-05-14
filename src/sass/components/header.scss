@@ -1,0 +1,35 @@
+@import "../variables";
+@import "../mixins";
+
+.header {
+    padding: 0;
+    position: relative;
+
+    transition: all .4s ease-in-out;
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0 auto;
+
+        height: #{$header-height - 80};
+        max-width: $content-width;
+
+        @include tabletUp() {
+            height: $header-height;
+        }
+    }
+
+    &__logo {
+        width: 111px;
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+}

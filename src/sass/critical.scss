@@ -1,0 +1,14 @@
+// Import styles for compiling
+@import "variables";
+@import "normalize";
+
+@import "mixins";
+@import "main";
+
+//components
+@import "components/header";
+@import "components/navigation";
+@import "components/buttons";
+
+@import "components/page-hero";
+
