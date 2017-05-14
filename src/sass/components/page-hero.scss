@@ -11,13 +11,13 @@ $img-height: 712px;
 
     color: #fff;
 
-    background-image: url(../img/bg-heropage-mob.jpg);
+    background-image: url(./img/bg-heropage-mob.jpg);
     background-color: $brand-color;
     background-size: cover;
     background-position: 50% 0;
 
     @include tabletUp() {
-        background-image: url(../img/bg-heropage.jpg);
+        background-image: url(./img/bg-heropage.jpg);
         height: $img-height;
 
         @include firstScreen() {
@@ -25,7 +25,7 @@ $img-height: 712px;
         }
 
         @include retina2x() {
-            background-image: url(../img/bg-heropage@2x.jpg)
+            background-image: url(./img/bg-heropage@2x.jpg)
         }
     }
 
@@ -60,7 +60,7 @@ $img-height: 712px;
                 left: 0;
                 transform: translateY(60px);
 
-                background-image: url(../img/O.png);
+                background-image: url(./img/O.png);
                 background-color: transparent;
                 background-position: 0 0;
                 background-size: contain;
@@ -72,7 +72,7 @@ $img-height: 712px;
                 }
 
                 @include retina2x() {
-                    background-image: url(../img/O@2x.png)
+                    background-image: url(./img/O@2x.png)
                 }
             }
         }
