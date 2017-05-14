@@ -6,7 +6,7 @@ $(function() {
     });
 
     //click on navigation items
-    $('#js-mainNavigation').on('click', '.nav__item:not(.button)', handleClickToScroll);
+    $('#js-mainNavigation').on('click', '.nav__item:not(.nav__item--button)', handleClickToScroll);
     $('#js-ScrollToContacts').on('click', handleClickToScroll);
 });
 
