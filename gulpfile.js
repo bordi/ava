@@ -19,6 +19,7 @@ const cacheBuster = require('gulp-cachebust');
 const http = require('http');
 const st = require('st');
 const gutil = require('gulp-util');
+const ghPages = require('gulp-gh-pages');
 
 // Scripts and tests
 const jshint = require('gulp-jshint');
