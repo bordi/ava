@@ -56,7 +56,7 @@ function loadImage() {
     if(detectMob()) {
         return;
     }
-    
+
     var img = new Image();
 
     img.src = isRetina() ? "./img/bg-heropage@2x.jpg" : "./img/bg-heropage.jpg";
