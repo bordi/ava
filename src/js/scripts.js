@@ -35,6 +35,18 @@ $(window).on('load', function() {
             handleSliderChange(null, 30);
         },
         onSlide: handleSliderChange,
+        onSlideEnd: function(position, value) {
+            var eventCategory = 'Landing page Slack';
+            var eventAction = 'Change amount team mates';
+            var eventLabel = '';
+
+            ga('send', {
+                hitType: 'event',
+                eventCategory: eventCategory,
+                eventAction: eventAction,
+                eventLabel: eventLabel
+            });
+        },
     });
 
     $('#page').indyFadeBox();
